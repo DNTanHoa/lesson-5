@@ -1,0 +1,484 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+#showTop
+{
+	color: white;
+	font-size: 20px;
+	background-color: rgb(86,174,212);
+	border-radius:0 0 0 30px;
+	padding: 10px;
+	position: absolute;
+	top:0;
+	right: 0;
+}
+/*
+ * topContact-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+#topContact
+{
+	padding: 30px 10%;
+	display: none;
+}
+.topContactContent
+{
+	display: flex;
+	display: -ms-flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.phoneAndMail p
+{
+	padding: 0 10px;
+	border-right: solid 1px rgb(198,198,198);
+	color: rgb(108,108,108);
+	display: inline-block;
+}
+#topSocialIcon i
+{
+	background: none;
+	color: rgb(198,198,198);
+}
+#topSocialIcon i:hover
+{
+	background-color: orange;
+	color: white;
+}
+/*
+ * header-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+.pageHeader
+{
+	padding: 0 10%;
+	border-top:solid 3px rgb(86,174,212);
+}
+.headerContent
+{
+	display: flex;
+	display: -ms-flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.headerContent h1
+{
+	font-weight: 500;
+	font-size: 40px;
+}
+.pageNavibar
+{
+	list-style-type: none;
+}
+.navibarItems:hover
+{
+	background-color: rgb(86,174,212);
+	color: white;
+}
+.navibarItems:hover a
+{
+	color: white;
+}
+.navibarItems
+{
+	float: left;
+	padding: 35px 15px;
+}
+.navibarItems a
+{
+	text-decoration: none;
+	font-family: sans-serif;
+	color: rgb(108,108,108);
+	font-size: 15px;
+}
+#active
+{
+	background-color: rgb(86,174,212);
+	color: white;
+}
+#active a 
+{
+	color: white;
+}
+#lastNaviarItem
+{
+	padding-right: 0; 
+}
+/*
+ * Slider-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+.slideImage
+{
+	height: 500px;
+	width: 100%;
+	position: relative;
+}
+.imagesOfSlide
+{
+	height: 500px;
+	width: 100%;
+	display: none;
+}
+.slider
+{
+	padding-left: 10%;
+	padding-right: 10%; 
+	padding-top: 8%;
+	padding-bottom: 5%;
+	position: absolute;
+	top: 20%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 80%;
+}
+.slider:hover i
+{
+	visibility: visible;
+}
+.slider h1
+{
+	text-transform: uppercase;
+	display: inline-block;
+	color: white;
+	font-size: 25px;
+	font-weight: 400;
+	margin-bottom: 10px;
+	background-color: black;
+	margin-bottom: 20px;
+}
+.slider p
+{
+	font-family: sans-serif;
+	color: white;
+	display: inline-block;
+	background-color: black;
+	margin-bottom: 20px; 
+}
+.slider button
+{
+	background-color: white;
+	color: black;
+	text-transform: uppercase;
+	border-radius: 8px;
+	padding: 8px;
+	cursor: pointer;
+	border: none;
+}
+#nextSlide
+{
+	color: rgb(108,108,108);
+	cursor: pointer;
+	font-size: 25px;
+	position: absolute;
+	display:inline-block;
+	padding: 10px;
+	top: 40%;
+	right:10px;
+	visibility: hidden;
+	transition: visibility 5s;
+	-webkit-transition: visibility 5s;
+
+}
+ #backSlide
+ {
+ 	color: rgb(108,108,108);
+	font-size: 25px;
+	position: absolute;
+	cursor: pointer;
+	display:inline-block;
+	padding: 10px;
+	top: 40%;
+	left: 10px;
+	visibility: hidden;
+	transition: visibility 5s;
+	-webkit-transition: visibility 5s;
+ }
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Page title
+ * Author: Tan Hoa;
+ *
+*/
+.selectionTitle
+{
+	text-align: center;
+	color: rgb(108,108,108);
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 50px 0px 20px 0px;
+}
+.selectionContent
+{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.selectionSortIntroduce
+{
+	text-align: center;
+	font-family: sans-serif;
+	color: rgb(108,108,108);
+}
+.boxes
+{
+	display: flex;
+	display: -ms-flex;
+	justify-content: space-between;
+	padding:30px 0px;
+}
+.boxContent
+{
+	flex-basis: 28%;
+	display: flex;
+	display: -ms-flex;
+	justify-content: space-between;
+	align-items: top;
+}
+.boxContent>i
+{
+	padding-top:10px;
+	vertical-align: top;
+	font-size: 30px;
+	padding-right: 20px; 
+}
+.boxText>p
+{
+	font-family: sans-serif;
+	color: rgb(108,108,108);
+}
+#toLeft
+{
+	float: left;
+}
+#mediumTitle
+{
+	font-size: 25px;
+	font-weight: 400;
+	color: rgb(108,108,108);
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Page projects
+ * Author: Tan Hoa;
+ *
+*/
+.projects
+{
+	padding: 2% 10%;
+}
+.sliderMultipleItem
+{
+  display:flex;
+  display: -ms-flex;
+}
+.slideItem
+{
+  display:flex;
+  display:-ms-flex;
+  display:none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.slideItem img
+{
+  height:150px;
+  width:150px;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Page article
+ * Author: Tan Hoa;
+ *
+*/
+.article
+{
+	padding: 5% 10%;
+	display: flex;
+	display: -ms-flex;
+	justify-content: space-between;
+	align-items: top;
+}
+.articleSecondBlock img
+{
+	width: 100%;
+	height: 300px;
+	padding: 20px 0px;
+}
+.articleFirstBlock
+{
+	margin-right: 20px; 
+	width: 50%;
+}
+.articles
+{
+	display: flex;
+	display: -ms-flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+.articleContent
+{
+	flex-basis: 45%;
+	display: flex;
+	display: -ms-flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+	font-size: 15px;
+}
+.articleContent>div>p
+{
+	padding-left: 20px;
+	font-family: sans-serif;
+	color: rgb(119,119,119);
+}
+.articleContent img
+{
+	width: 100px;
+	height: 100px;
+	padding: 2px;
+	border:solid 1px rgb(174,174,174);
+}
+.articleSecondBlock p
+{
+	font-size: 18px;
+	color: rgb(119,119,119);
+	font-family: sans-serif;
+}
+.readMore
+{
+	text-decoration: none;
+	color: rgb(108,184,217);
+	font-family: sans-serif;
+	float: right;
+	padding-top: 20px;
+	font-size: 14px;
+}
+.articleSecondBlock
+{
+	width: 50%;
+}
+#bigTitle
+{
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 30px;
+	color: black;
+}
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Page footer
+ * Author: Tan Hoa;
+ *
+*/
+.pageFooter
+{
+	padding: 2% 10%;
+	display: flex;
+	display: -ms-flex;
+	justify-content: space-between;
+	align-items: top;
+	background-color: rgb(35,35,35);
+}
+.contentTitle
+{
+	color: rgb(148,148,148);
+	font-size: 15px;
+	line-height: 30px;
+	margin-bottom: 20px;
+	border-bottom: solid 1px rgb(174,174,174);
+}
+.navigateItems
+{
+	list-style: none;
+}
+.navigateItems li
+{
+	padding: 10px 0px;
+	border-bottom: solid 1px rgb(174,174,174);
+}
+.fromTiwtter, .address
+{
+	color: rgb(174,174,174);
+	padding: 10px 0px;
+	border-bottom: solid 1px rgb(174,174,174);
+	font-family: sans-serif;
+}
+.lineImage
+{
+	display: flex;
+	display: -ms-flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 10px;
+}
+.galleryImage img
+{
+	width: 60px;
+	height: 60px;
+	opacity: 0.5;
+	cursor: pointer;
+	transition: transform 3s;
+	-webkit-transition: transform 3s;
+}
+.galleryImage img:hover
+{
+	opacity: 1;
+	transform: scale(1.5);
+}
+.socialIcon i
+{
+	color: rgb(174,174,174);
+	padding: 10px;
+	font-size: 15px;
+	background-color: rgb(51,51,51);
+	border-radius: 50%;
+	cursor: pointer;
+	transition: color 2s;
+	-webkit-transition: color 2s;
+}
+.socialIcon i:hover
+{
+	color: white;
+	background-color: black;
+}
+#lastItems
+{
+	border: none;
+}
+.navigateItems a
+{
+	text-decoration: none;
+	color: rgb(174,174,174);
+	font-family: sans-serif;
+}
+.contentTitle::after
+{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 50px;
+	border-top: solid 5px rgb(86,174,212);
+}
+.footerContent
+{
+	flex-basis: 20%;
+}
+.pageCopyright
+{
+	padding-right: 10%;
+	padding-left: 10%;
+	background-color: rgb(42,42,42);
+	border-top: solid 5px rgb(58,58,58);
+}
+.copyright
+{
+	display: flex;
+	display: -ms-flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	background-color: rgb(42,42,42);
+	color: rgb(174,174,174);
+	height: 80px;
+}
